@@ -48,9 +48,9 @@ The weird output above shows the service is *not running*: the Active field is *
 # systemctl start httpd
 #
 ```
-Yes, systemd does not like you and won't tell you if it worked. It'll tell if it failed, though, so rest assured. You can check it with *systemctl status* (operation first, service later) if you want!
+Yes, systemd does not like you and won't tell you if it worked. It'll tell if it failed, though, so rest assured, everything is fine. You can check it with *systemctl status* (operation first, service later) if you want!
 
-* But if it reboots?
+* But what if it reboots?
 
 ```
 # # Instead of: 
@@ -79,7 +79,6 @@ Check with status to see the difference:
            ├─2819 /usr/sbin/httpd -DFOREGROUND
            ├─2820 /usr/sbin/httpd -DFOREGROUND
            └─2821 /usr/sbin/httpd -DFOREGROUND
-
 ```
 Notice the subtle *enabled* in the *Loaded* line.
 
